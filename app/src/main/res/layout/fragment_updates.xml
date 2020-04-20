@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerActivitiesFragments.UpdatesFragment"
+    android:background="@color/colorWhite">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/rv_updates"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/shield_apps"
+            android:layout_margin="10dp"
+            android:id="@+id/iv_updates"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No problems found"
+            android:layout_toRightOf="@id/iv_updates"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_noprob"
+            android:textColor="@color/colorBlack"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apps Scanned at 10.36 AM"
+            android:layout_toRightOf="@id/iv_updates"
+            android:textColor="#E94D4B4B"
+            android:layout_below="@id/tv_noprob"
+            />
+         <ImageView
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:src="@drawable/refresh"
+             android:layout_alignParentRight="true"
+             android:layout_centerInParent="true"
+             android:layout_marginRight="30dp"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_updates"
+        android:layout_below="@id/rv_updates"
+        android:textSize="10dp"
+        android:text="Updates Pending(20)"
+        android:textColor="#EB423F3F"
+        android:textStyle="normal"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_updates_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_updates"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dp"
+        android:text="Auto-Updates is turned on"
+        android:textColor="#CE7A7A7A"
+        android:textSize="7dp"
+        android:textStyle="normal" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Update"
+        android:background="@drawable/button_border"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rv_updates"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="35dp"
+        android:textColor="@color/colorWhite"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_updates"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/tv_updates_tag"/>
+
+</RelativeLayout>

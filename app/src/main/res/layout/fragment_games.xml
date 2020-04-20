@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BtmNavFragments.GamesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/drawer_toolbar"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_games">
+    <com.google.android.material.tabs.TabLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        app:tabIndicatorHeight="6px"
+        app:tabSelectedTextColor="@color/colorPrimary"
+
+    android:id="@+id/games_tablayout"
+    android:background="@color/colorWhite"
+
+        android:minHeight="?attr/actionBarSize"
+    app:tabIndicatorColor="@color/colorPrimary"
+    app:tabIconTint="@color/colorPrimary"
+        app:tabTextColor="#EB3F3E3E"/>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/border_top"
+        android:layout_below="@id/rel_games"
+        android:id="@+id/games_viewpager"
+        />
+</RelativeLayout>
+</FrameLayout>

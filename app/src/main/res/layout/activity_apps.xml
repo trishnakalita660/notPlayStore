@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerActivities.AppsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/border_transp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/ib_arrow"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+           android:src="@drawable/ic_arrow_back_black_24dp"
+            android:onClick="imageclick"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ib_arrow"
+            android:layout_centerInParent="true"
+            android:text="My apps and games"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"/>
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_below="@id/drawer_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabGravity="fill"
+            android:id="@+id/tablayout_apps"
+            android:background="@color/colorWhite"
+            app:tabMode="fixed"
+
+            android:minHeight="?attr/actionBarSize"
+         app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIconTint="@color/colorPrimary"
+            app:tabIndicatorHeight="6px"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="#3F3E3E"
+            />
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tablayout_apps"
+            android:id="@+id/viewpager"
+            android:backgroundTint="#000000"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

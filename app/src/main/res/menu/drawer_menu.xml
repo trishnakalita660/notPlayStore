@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+    android:title="General"
+        >
+    <menu>
+        <item
+            android:id="@+id/my_apps"
+            android:icon="@drawable/calendar"
+            android:title="@string/my_apps_and_games"/>
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/notification"
+            android:title="@string/notification"/>
+
+        <item
+            android:id="@+id/subscription"
+            android:icon="@drawable/subscription"
+            android:title="@string/subscription"/>
+
+        <item
+            android:id="@+id/wishlist"
+            android:icon="@drawable/wishlistt"
+            android:title="@string/wishlist"/>
+
+    </menu>
+</item>
+    <item
+        android:title="Payments and Subscription">
+        <menu>
+            <item
+                android:id="@+id/accounts"
+                android:icon="@drawable/user"
+                android:title="@string/accounts"/>
+            <item
+                android:id="@+id/payment"
+                android:icon="@drawable/pay"
+                android:title="@string/payment_methods"/>
+
+            <item
+                android:id="@+id/play_protect"
+                android:icon="@drawable/shield"
+                android:title="@string/play_and_protect"/>
+
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/settings"
+                android:title="@string/settings"/>
+
+        </menu>
+    </item>
+</menu>
