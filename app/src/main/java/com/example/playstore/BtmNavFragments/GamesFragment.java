@@ -1,26 +1,12 @@
 package com.example.playstore.BtmNavFragments;
-
-
-import android.content.Context;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toolbar;
-
 import com.example.playstore.Adapter.DrawerAdapters.GamesPageAdapter;
-import com.example.playstore.Adapter.PageAdapter;
-import com.example.playstore.DrawerActivitiesFragments.InstalledFragment;
-import com.example.playstore.DrawerActivitiesFragments.LibraryFragment;
 import com.example.playstore.R;
 import com.google.android.material.tabs.TabLayout;
 

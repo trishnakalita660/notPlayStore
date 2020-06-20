@@ -12,11 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.playstore.Lists.appUpdate;
+import com.example.playstore.Models.appUpdate;
 import com.example.playstore.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class UpdatesAdapter extends RecyclerView.Adapter<UpdatesAdapter.viewholder> {
     private Context tcontext;

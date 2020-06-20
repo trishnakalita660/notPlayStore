@@ -1,4 +1,4 @@
-package com.example.playstore.Lists;
+package com.example.playstore.Models;
 
 public class appUpdate  {
     private int Images;

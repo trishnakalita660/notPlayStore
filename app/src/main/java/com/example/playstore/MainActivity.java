@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                  if (id== R.id.apps){
                      AppsFragment fragment = new AppsFragment();
+                     //GamesFragment fragment= new GamesFragment();
                      FragmentTransaction ft= getSupportFragmentManager().beginTransaction();
                      ft.replace(R.id.container_fragment,fragment);
                      ft.commit();

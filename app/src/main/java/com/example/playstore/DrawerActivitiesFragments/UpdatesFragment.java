@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.playstore.Adapter.DrawerAdapters.UpdatesAdapter;
-import com.example.playstore.Lists.appUpdate;
+import com.example.playstore.Models.appUpdate;
 import com.example.playstore.R;
 
 import java.util.ArrayList;

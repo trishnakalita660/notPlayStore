@@ -21,23 +21,13 @@ public class GamesPageAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
 
-    switch (position){
-
-        case 0:
+        for(int i=0; i<counttab; i++){
             ForYouFragment forYouFragment= new ForYouFragment();
             return forYouFragment;
-        case 1:
-            TopChartsFragment topChartsFragment= new TopChartsFragment();
-            return  topChartsFragment;
+        }
 
-        case 2:
-            LibraryFragment libraryFragment= new LibraryFragment();
-            return libraryFragment;
-        default:
-                return null;
 
-    }
-
+return  null;
     }
 
     @Override
